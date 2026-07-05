@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &amp; Pricing — Iron Valley Plumbing &amp; Air</title>
+  <meta name="description" content="Flat-rate pricing for plumbing, heating, cooling, and drain work in the La Crosse area. The price we quote is the price you pay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+  <div class="alert-bar">
+    <span class="alert-dot"></span>
+    <strong>BURST PIPE? NO HEAT?</strong>&nbsp;Trucks on the road 24/7 —
+    <a href="tel:+16085550178">CALL (608) 555-0178</a>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M6 34 L20 6 L34 34 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M14 34 L20 22 L26 34" fill="none" stroke="var(--orange)" stroke-width="4" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">IRON VALLEY<small>PLUMBING &amp; AIR</small></span>
+    </a>
+    <nav class="site-nav" id="site-nav">
+      <a href="services.html">Services</a>
+      <a href="index.html#home-areas">Service Area</a>
+      <a href="index.html#home-reviews">Reviews</a>
+      <a href="tel:+16085550178" class="nav-phone">(608) 555-0178</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="page-hero" id="services-hero">
+      <h1 class="reveal">THE PRICE WE QUOTE IS<br><span>THE PRICE YOU PAY.</span></h1>
+      <p class="reveal">Typical flat-rate ranges below. Every job still gets a written quote before work starts —
+        these numbers are so you're never guessing.</p>
+    </section>
+
+    <section class="price-section" id="svc-plumbing">
+      <h2 class="reveal"><small>SERVICE 01</small>PLUMBING</h2>
+      <p class="price-note reveal">Diagnostic fee $69 — waived when you approve the repair.</p>
+      <table class="price-table">
+        <tr class="reveal"><td>Faucet or fixture repair</td><td>$120 – $240</td></tr>
+        <tr class="reveal"><td>Garbage disposal install</td><td>$280 – $380</td></tr>
+        <tr class="reveal"><td>Sump pump replacement</td><td>$520 – $780</td></tr>
+        <tr class="reveal"><td>Water heater (40/50 gal, installed)</td><td>$1,450 – $2,100</td></tr>
+        <tr class="reveal"><td>Tankless water heater (installed)</td><td>$3,200 – $4,400</td></tr>
+      </table>
+    </section>
+
+    <section class="price-section" id="svc-heating">
+      <h2 class="reveal"><small>SERVICE 02</small>HEATING</h2>
+      <p class="price-note reveal">Furnace tune-ups keep your warranty valid. Ask about the Iron Plan — 2 tune-ups a year, $16/mo.</p>
+      <table class="price-table">
+        <tr class="reveal"><td>Furnace tune-up &amp; safety check</td><td>$109</td></tr>
+        <tr class="reveal"><td>Common furnace repairs</td><td>$180 – $550</td></tr>
+        <tr class="reveal"><td>New high-efficiency furnace (installed)</td><td>$4,800 – $7,500</td></tr>
+        <tr class="reveal"><td>Heat pump system (installed)</td><td>$7,900 – $12,500</td></tr>
+      </table>
+    </section>
+
+    <section class="price-section" id="svc-cooling">
+      <h2 class="reveal"><small>SERVICE 03</small>COOLING</h2>
+      <p class="price-note reveal">AC sized by Manual-J load calculation — not by what's on the truck.</p>
+      <table class="price-table">
+        <tr class="reveal"><td>AC tune-up &amp; refrigerant check</td><td>$99</td></tr>
+        <tr class="reveal"><td>Common AC repairs</td><td>$160 – $600</td></tr>
+        <tr class="reveal"><td>Central AC replacement (installed)</td><td>$4,200 – $6,800</td></tr>
+        <tr class="reveal"><td>Ductless mini-split (single zone)</td><td>$3,400 – $4,600</td></tr>
+      </table>
+    </section>
+
+    <section class="price-section" id="svc-drains">
+      <h2 class="reveal"><small>SERVICE 04</small>DRAINS &amp; SEWER</h2>
+      <p class="price-note reveal">Every main-line job includes before &amp; after camera footage — you see what we see.</p>
+      <table class="price-table">
+        <tr class="reveal"><td>Drain clearing (tub, sink, toilet)</td><td>$140 – $260</td></tr>
+        <tr class="reveal"><td>Main line auger</td><td>$320 – $480</td></tr>
+        <tr class="reveal"><td>Camera inspection</td><td>$190</td></tr>
+        <tr class="reveal"><td>Hydro-jetting</td><td>$450 – $700</td></tr>
+      </table>
+    </section>
+
+    <section class="quote" id="quote">
+      <div class="quote-copy">
+        <h2 class="section-title reveal">DIDN'T SEE <span>YOUR PROBLEM?</span></h2>
+        <p class="reveal">If it involves pipes, heat, or air — we've fixed it before. Describe it and we'll quote it.</p>
+        <p class="quote-phone reveal"><a href="tel:+16085550178">(608) 555-0178</a></p>
+      </div>
+      <form class="quote-form reveal" id="quote-form">
+        <label>NAME<input type="text" name="name" required placeholder="Pat Miller"></label>
+        <label>PHONE<input type="tel" name="phone" required placeholder="(608) 555-0000"></label>
+        <label>WHAT'S GOING ON?<textarea name="issue" rows="4" placeholder="Basement drain backing up..."></textarea></label>
+        <button type="submit" class="btn btn-orange btn-block">SEND IT →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Iron Valley Plumbing &amp; Air · La Crosse, WI · Lic. #MP-268401</p>
+    <p class="footer-fine">A demonstration website by <a href="https://refreshweb.io">RefreshWeb</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
