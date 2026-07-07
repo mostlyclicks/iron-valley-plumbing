@@ -11,6 +11,15 @@
   --orange:   #FF6B1A;
   --orange-d: #E05808;
   --yellow:   #FFC91F;
+
+  /* Semantic status tokens — derived from the site's own palette so
+     alerts/success/error states stay on-brand instead of using generic
+     red/green/yellow. */
+  --success: #3FA34D;         /* industrial safety green, distinct from orange/yellow */
+  --warning: var(--yellow);   /* existing safety yellow */
+  --error:   var(--orange-d); /* existing darker orange, reads as urgent in this palette */
+  --info:    var(--concrete); /* neutral steel tone — no blue exists in this palette, stay on-brand */
+
   --font-display: "Archivo Black", Impact, sans-serif;
   --font-cond:    "Barlow Condensed", sans-serif;
   --font-body:    "Barlow", -apple-system, sans-serif;
