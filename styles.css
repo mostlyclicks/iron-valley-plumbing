@@ -217,6 +217,33 @@ section { scroll-margin-top: 120px; }
 .steps-list h3 { color: var(--orange); font-size: 1.1rem; margin-bottom: 12px; }
 .steps-list p { color: var(--concrete); font-size: 0.98rem; }
 
+/* ————— 24/7 Emergency Services ————— */
+.emergency-services {
+  background: var(--charcoal); padding: clamp(56px, 8vw, 100px) clamp(20px, 5vw, 56px);
+}
+.emergency-inner {
+  max-width: 1240px; margin: 0 auto;
+}
+.emergency-services .section-title {
+  font-size: clamp(1.7rem, 4vw, 2.8rem); margin-bottom: 20px;
+}
+.emergency-services .section-title span { color: var(--yellow); }
+.emergency-lede {
+  font-size: 1.15rem; color: var(--concrete); max-width: 54ch; margin-bottom: 32px;
+}
+.emergency-list {
+  list-style: none; margin-bottom: 32px; display: grid; gap: 14px;
+}
+.emergency-list li {
+  font-size: 1.02rem; color: var(--smoke); padding-left: 28px; position: relative;
+}
+.emergency-list li::before {
+  content: "⚡"; position: absolute; left: 0; color: var(--yellow); font-size: 1.2rem;
+}
+.emergency-list strong { color: var(--yellow); font-weight: 700; }
+.btn-yellow { background: var(--yellow); color: var(--black); }
+.btn-yellow:hover { background: #ffd84f; transform: translateY(-2px); }
+
 /* ————— Reviews ————— */
 .reviews { max-width: 1240px; margin: 0 auto; padding: clamp(56px, 8vw, 100px) clamp(20px, 5vw, 56px); }
 .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
