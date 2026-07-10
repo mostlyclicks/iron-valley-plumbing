@@ -34,11 +34,24 @@ var observer = new IntersectionObserver(
 )
 document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el) })
 
-// Demo quote form — no backend yet, show a confirmation state
+// Quote form — submits to RefreshWeb's shared contact endpoint
 var form = document.getElementById('quote-form')
 if (form) {
   form.addEventListener('submit', function (e) {
     e.preventDefault()
+    var data = new FormData(form)
+    fetch('https://refreshweb.io/api/client-contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        clientId: '9fd02e4a-6686-45a8-8318-0054680da10b',
+        name: data.get('name'),
+        contact: data.get('phone'),
+        message: data.get('issue'),
+        page: location.pathname,
+        hp: data.get('hp'),
+      }),
+    }).catch(function () {})
     form.innerHTML = '<p class="sent-msg">GOT IT. WE\'LL CALL YOU BACK WITHIN THE HOUR. 🔧</p>'
   })
 }
